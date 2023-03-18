@@ -1,3 +1,8 @@
+C_BASE = 19652
+C_INIT = 1.25
+DIRICHLET_ALPHA = 0.35
+DIRICHLET_EPS = 0.25
+
 class ZeroParameters:
     '''
     モンテカルロ木探索用のパラメーターN(訪問回数)とW(累積報酬)とP(着手確率)
