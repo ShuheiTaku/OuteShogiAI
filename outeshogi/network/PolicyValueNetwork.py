@@ -3,13 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from cshogi import *
 
-# 移動方向を表す定数
-MOVE_DIRECTION = [
-    UP, UP_LEFT, UP_RIGHT, LEFT, RIGHT, DOWN, DOWN_LEFT, DOWN_RIGHT,
-    UP2_LEFT, UP2_RIGHT,
-    UP_PROMOTE, UP_LEFT_PROMOTE, UP_RIGHT_PROMOTE, LEFT_PROMOTE, RIGHT_PROMOTE, DOWN_PROMOTE, DOWN_LEFT_PROMOTE, DOWN_RIGHT_PROMOTE,
-    UP2_LEFT_PROMOTE, UP2_RIGHT_PROMOTE
-] = range(20)
 # 入力特徴量の数
 FEATURES_NUM = len(PIECE_TYPES) * 2 + sum(MAX_PIECES_IN_HAND) * 2
 # 移動を表すラベルの数
