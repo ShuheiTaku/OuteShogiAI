@@ -5,6 +5,9 @@ class MCTSParameters:
         self.W = {}
         
 class MCTSBot:
+    '''
+    モンテカルロ木探索で着手を決定するBot
+    '''
     def __init__(self, params):
         self.params = params
         self.mcts = MCTS(self.params)
