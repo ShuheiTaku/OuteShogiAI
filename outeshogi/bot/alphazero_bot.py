@@ -11,6 +11,9 @@ class ZeroParameters:
         self.P = {}
 
 class AlphaZeroBot:
+    '''
+    AlphaZeroアルゴリズムで着手を決定するBot
+    '''
     def __init__(self):
         self.params = ZeroParameters()
         self.alphazero = AlphaZero(self.params)
