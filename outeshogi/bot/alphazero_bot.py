@@ -159,7 +159,7 @@ class AlphaZero:
         self.params.N[hash][move_label] += 1
 
     def _calc_puct(self, board):
-        self.puct_count += 1
+        self.puct_count += 1  # デバッグ用
         '''
         渡された場面からの全ての着手のPUCT値リストを返す(非合法手は-np.inf)
         '''
